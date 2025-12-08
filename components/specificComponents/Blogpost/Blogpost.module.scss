@@ -95,18 +95,10 @@
   }
 }
 
-.blogpostitemcontent {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 20px;
-  align-items: start;
-}
-
-.blogpostimage {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
+.blogposttitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: $color-grey-normal;
 }
 
 

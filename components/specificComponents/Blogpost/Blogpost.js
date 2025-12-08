@@ -18,9 +18,6 @@ export default class Blogpost extends Component {
 						<span className={css["blogposttitle"]}>{this.props.blok.title}</span>
 					</div>
 					<div className={css["blogpostitemcontent"]}>
-						{this.props.blok.image && (
-							<img src={this.props.blok.image.filename} alt={this.props.blok.image.alt} className={css["blogpostimage"]} />
-						)}
 						{RichTextToHTML({ document: this.props.blok.description })}
 					</div>
 				</div>
