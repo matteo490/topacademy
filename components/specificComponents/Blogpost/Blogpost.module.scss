@@ -2,6 +2,81 @@
 @import "../../../styles/colors.scss";
 
 
+.blogpostitem {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media only screen and (min-width: 800px) {
+    padding: 0 40px;
+  }
+
+  @media only screen and (min-width: 1250px) {
+    padding: 0;
+  }
+}
+
+.blogpostheader {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  margin-top: 40px;
+
+  @media only screen and (min-width: 800px) {
+    margin-bottom: 30px;
+    margin-top: 60px;
+  }
+
+  @media only screen and (min-width: 1250px) {
+    margin-bottom: 40px;
+    margin-top: 70px;
+  }
+}
+
+.blogposttitle {
+  @include title-font($color-grey-normal);
+  margin-bottom: 15px;
+
+  @media only screen and (min-width: 800px) {
+    margin-bottom: 20px;
+  }
+}
+
+.blogpostauthortext {
+  @include text-font($color-grey-light);
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $color-blue-normal;
+  }
+
+  @media only screen and (min-width: 800px) {
+    margin-bottom: 15px;
+  }
+}
+
+.blogpostdate {
+  @include small-text-font($color-grey-light);
+  font-weight: 500;
+}
+
+.blogpostitemcontent {
+  margin-bottom: 50px;
+
+  @media only screen and (min-width: 800px) {
+    margin-bottom: 70px;
+  }
+
+  @media only screen and (min-width: 1250px) {
+    margin-bottom: 90px;
+  }
+}
+
+
 .blogpost-page {
   
   &__main-content {
@@ -93,12 +168,6 @@
     margin-bottom: 20px;
     @include title-font;
   }
-}
-
-.blogposttitle {
-  font-size: 24px;
-  font-weight: bold;
-  color: $color-grey-normal;
 }
 
 

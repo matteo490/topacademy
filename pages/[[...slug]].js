@@ -17,6 +17,7 @@ export default function Page({ story, preview, socialtags, menu }) {
       "song.artist",
       "course.teachers",
       "course.products",
+      "blogpost.author",
       "list.elements"
     ]
   }, preview);
@@ -48,6 +49,7 @@ export async function getStaticProps({ params }) {
       "song.artist",
       "course.teachers",
       "course.products",
+      "blogpost.author",
       "list.elements"
     ]
   };
