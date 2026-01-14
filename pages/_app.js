@@ -65,7 +65,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-       <script src="https://t.contentsquare.net/uxa/411868cda1e74.js"></script>
+       {/* <script src="https://t.contentsquare.net/uxa/411868cda1e74.js"></script> */}
       </Head>
       <Component {...pageProps} />
     </>
